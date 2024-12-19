@@ -1,0 +1,51 @@
+.random {
+  padding-top: 7em;
+  .wygrana{
+    padding-top: 1em;
+    @include center
+  }
+  &__content {
+    flex-direction: column;
+    @include center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    .myButton {
+      background-color:#ebf04f;
+      border-radius:28px;
+      border:1px solid #faeb41;
+      display:inline-block;
+      cursor:pointer;
+      color:#d18a64;
+      font-family:Arial;
+      font-size:12px;
+      padding:8px 14px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #f0e13e;
+    }
+    .myButton:hover {
+      background-color:#e0ed2d;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
+    .myButton.change {
+      background-color:#f04f65;
+      border-radius:28px;
+      border:1px solid #fa4166;
+      display:inline-block;
+      cursor:pointer;
+      color:#ebeb00;
+      font-family:Arial;
+      font-size:12px;
+      padding:8px 14px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #eb1147;
+    }
+  &--inputs{
+    display: flex;
+    flex-direction: row;
+  }  
+  }
+}

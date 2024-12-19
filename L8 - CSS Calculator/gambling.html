@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/log.ico" />
+    <!-- https://sass-lang.com/ -->
+    <link rel="stylesheet" href="./Style/style.css" />
+    <script src="./Scritps/reload.js" defer></script>
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+    <script src="./Scritps/gambling.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu" id="menu">
+        <h1><img src="Style/Img/icon.png" alt=""></h1>
+      </div>
+      <div class="header--bobux"> 
+        <img src="Style/Img/bobux.png" alt="">
+        <p id="output">0</p>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bobux.html">Bobux</a></li>
+        <li><a href="gambling.html">Gambling</a></li>
+        <li><a href="random.html">Random number</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">
+            Close
+          </button>
+        </li>
+      </ul>
+      
+    </header>
+    <section>
+      <section class="gambling">
+        <div class="gambling__content">
+          <h1>Ruletka</h1>
+          <p>Możesz obstawić na każdy z kolorów</p>
+          <div class="div"></div>
+          <p class="wygrana">W tym miejscu dowiesz się jaki kolor wygrał</p>
+        </div>
+      </section>
+      <section class="gamble">
+        <div class="gamble__content">
+          <div class="gamble__content--image">
+            <div class="gamble__content--image__text">
+              <div class="gamble__content--image__text--input">
+                <div></div>
+                <div class="div2 changed"></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;47,5%</p>
+              </div>
+              <p>za wygranie na czarnym zdobywasz 2 tego co postawiłeś</p>
+              <div class="gamble__content--image__text--input">
+                <input type="number" step="1" id="output1" min="0"/>
+              </div>
+            </div>
+      
+            <div class="gamble__content--image__text">
+              <div class="gamble__content--image__text--input">
+                <div></div>
+                <div class="div2 changed2"></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;47,5%</p>
+              </div>
+              <p>za wygranie na czerwonym zdobywasz 2 tego co postawiłeś</p>
+              <div class="gamble__content--image__text--input">
+                <input type="number" step="1" id="output2" min="0"/>
+              </div>
+            </div>
+      
+            <div class="gamble__content--image__text">
+              <div class="gamble__content--image__text--input">
+                <div></div>
+                <div class="div2 changed3"></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;5%</p>
+              </div>
+              <p>za wygranie na zielonym zdobywasz 5 tego co postawiłeś</p>
+              <div class="gamble__content--image__text--input">
+                <input type="number" step="1" id="output3" min="0"/>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="gambling">
+        <div class="gambling__content">
+          <button class="myButton" onclick="divc()">Gambluj</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

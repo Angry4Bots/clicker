@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/log.ico" />
+    <!-- https://sass-lang.com/ -->
+    <link rel="stylesheet" href="./Style/style.css" />
+    <script src="./Scritps/reload.js" defer></script>
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+    <script src="./Scritps/random.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu" id="menu">
+        <h1><img src="Style/Img/icon.png" alt=""></h1>
+      </div>
+      <div class="header--bobux"> 
+        <img src="Style/Img/bobux.png" alt="">
+        <p id="output">0</p>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bobux.html">Bobux</a></li>
+        <li><a href="gambling.html">Gambling</a></li>
+        <li><a href="random.html">Random number</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">
+            Close
+          </button>
+        </li>
+      </ul>
+      
+    </header>
+    <section class="random">
+      <div class="random__content">
+        <h1>Randomowe liczby</h1>
+        <p>twoim zadaniem jest zgadnięcie liczby za co możesz dostać pieniądze <br> oczywiście nie bez ryzyka</p>
+        <p>Tutaj wybierasz od ilu do ilu chcesz szukać liczb (max 100, a defaultowo będzie ustawione na 10, <br> jeśli liczba którą będziesz szukał będzie równa jeden lub poniżej będziesz szukał liczb pomiędzy jeden, a dwa)</p>
+        <div class="random__content--inputs">
+          <input type="number" step="1" id="output1" min="0" max="100"/>
+          <button class="myButton" onclick="random1()" id="1">Potwierdź</button>
+        </div>
+        <p>Tutaj obstawiasz swoje pieniądze</p>
+        <div class="random__content--inputs">
+          <input type="number" step="1" id="output2" min="0" max="100"/>
+          <button class="myButton" onclick="random2()" id="2">Potwierdź</button>
+        </div>
+        <p>Tutaj podajesz tą liczbe</p>
+        <div class="random__content--inputs"></div>
+          <input type="number" step="1" id="output3" min="0" max="0" disabled/>
+          <button class="myButton" onclick="random3()" id="3">Potwierdź</button>
+        </div>
+        <div>
+          <p class="wygrana">Tutaj się dowiesz czy wygrałeś</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

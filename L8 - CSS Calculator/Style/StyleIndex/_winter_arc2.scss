@@ -1,0 +1,28 @@
+.winter_arc2 {
+  width: 100vw;
+  border-top: 0.3em solid $color2;
+  border-bottom: 0.3em solid $color2;
+  border-right: 2em solid $color2;
+  &__content {
+    width: 100%;
+    height: auto;
+    @include center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex: 1;
+    gap: 50px;
+    &--image {
+      width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+    &--text {
+      padding: 2em;
+      width: 500px;
+      h1 {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

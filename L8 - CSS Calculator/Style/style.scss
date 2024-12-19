@@ -1,0 +1,21 @@
+// https://sass-lang.com/
+// -------------------------------------------
+@import "./StyleGenral/reset";
+@import "./StyleGenral/values";
+@import "./StyleGenral/mixin";
+@import "./StyleGenral/body";
+@import "./StyleGenral/aplay_to_all";
+// -------------------------------------------
+@import "./StyleGenral/header";
+@import "./StyleGenral/headerOpen";
+@import "./StyleGenral/footer";
+// ----------------------------------------------
+@import "./StyleIndex/_winter_arc1";
+@import "./StyleIndex/_winter_arc2";
+@import "./StyleIndex/_winter_arc3";
+
+@import "./StyleIndex/_shop";
+@import "./StyleIndex/_gambling";
+@import "./StyleIndex/_random.scss";
+// ----------------------------------------------
+@import "./bobux/bobux"

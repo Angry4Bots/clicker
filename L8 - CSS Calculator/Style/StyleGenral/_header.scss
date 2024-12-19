@@ -1,0 +1,40 @@
+.header {
+  width: 100vw;
+  background-color: $color2;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  &--bobux{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1em solid $color2;
+    gap: 1vw;
+    img{
+      width: 3vw;
+      height: 3vw;
+    }
+    p{
+      font-size: large;
+    }
+  }
+
+
+  &__menu {
+    width: 5vw;
+    height: 10vh;
+    border: 0.7em solid $color2;
+    background-color: $color2;
+    @include center;
+    transition: background-color 0.3s ease;
+    img{
+      width: 3vw;
+      height: 3vw;
+    }
+
+    &:hover {
+      background-color: rgb(0, 155, 0);
+    }
+  }
+}

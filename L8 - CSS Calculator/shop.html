@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/log.ico" />
+    <!-- https://sass-lang.com/ -->
+    <link rel="stylesheet" href="./Style/style.css" />
+    <script src="./Scritps/reload.js" defer></script>
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+    <script src="./Scritps/shop.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu" id="menu">
+        <h1><img src="Style/Img/icon.png" alt=""></h1>
+      </div>
+      <div class="header--bobux"> 
+        <img src="Style/Img/bobux.png" alt="">
+        <p id="output">0</p>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bobux.html">Bobux</a></li>
+        <li><a href="gambling.html">Gambling</a></li>
+        <li><a href="random.html">Random number</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">
+            Close
+          </button>
+        </li>
+      </ul>
+      
+    </header>
+    <section class="shop">
+      <div class="shop__content">
+        <div class="shop__content--image">
+          <div class="shop__content--image__text">
+            <img class="image1" src="Style/Img/img1.jpg" alt="">
+            <p>kupno tego zwiększa twoją aure o 2 (zdobywasz dodatkowe +1 bobux za klikniecie i obrazek do galerii)<br>koszt: 100 bobux</p>
+            <p class="amountDisplay" id="amountDisplay1">Ilość: 1</p>
+            <button id="button" data-id="1" class="myButton" price="100" adding-value="1" amount="5" second="0">kup</button>
+          </div>
+    
+        <div class="shop__content--image__text">
+          <img class="image2"src="Style/Img/mango.png" alt="">
+          <p>kupno tego zwiększa twoją aure o 100 (zdobywasz dodatkowe +5 bobux za klikniecie i obrazek do galerii)<br>koszt: 2000 bobux</p>
+          <p class="amountDisplay" id="amountDisplay2">Ilość: 1</p>
+          <button id="button" data-id="2" class="myButton" price="2000" adding-value="5" amount="1" second="0">kup</button>
+        </div>
+    
+        <div class="shop__content--image__text">
+          <img class="image3" src="Style/Img/waterson.png" alt="">
+          <p>kupno tego zwiększa twoją aure o 2 co sekunde (zdobywasz +1 bobux co sekunde)<br>koszt: 5000 bobux</p>
+          <p class="amountDisplay" id="amountDisplay3">Ilość: 1</p>
+          <button id="button" data-id="3" class="myButton" price="5000" adding-value="0" amount="6" second="1">kup</button>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
